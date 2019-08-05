@@ -45,7 +45,7 @@ function orders(){
 function pizza(){
     var sizechoice=parseInt(document.getElementById('pizzasize').value);
     var crustchoice=parseInt(document.getElementById('pizzacrust').value);
-    var toppingschoice=parseInt(document.getElementById('pizzatoppings').value);
+    var toppingschoice=parseInt(document.getElementById('toppinga').value);
 
     var total= (sizechoice + crustchoice + toppingschoice + deliveryPrice);
     // document.getElementById("sizehistory").innerHTML = sizechoice;
