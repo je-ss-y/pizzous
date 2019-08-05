@@ -1,3 +1,13 @@
+@media only screen and (max-width: 600px){
+    .col-md-3{ 
+        width:50%;
+       
+    }
+    @media only screen and (min-width: 992px){
+        .col-md-3{
+             width:75%;
+        }
+ }
 body{
     background-image:url("https://images2.minutemediacdn.com/image/upload/c_crop,h_2238,w_3980,x_469,y_0/f_auto,q_auto,w_1100/v1554705304/shape/mentalfloss/539787-istock-943449226.jpg");
     background-repeat: no-repeat;

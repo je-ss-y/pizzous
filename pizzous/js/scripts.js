@@ -24,14 +24,14 @@ $(document). ready(function(){
 
         });
 
-$("form#pizzaform").submit(function(event){
+    $("form#pizzaform").submit(function(event){
     var sizechoice=parsefloat(document.getElementById('pizzasize').value);
     var crustchoice=parsefloat(document.getElementById('pizzacrust').value);
     // var toppingschoice=parsefloat(document.getElementById('pizzatoppings').value);
 
-    var total= (sizechoice + crustchoice + deliveryPrice);
+    var total= sizechoice + crustchoice + deliveryPrice;
     document.getElementById("totalamount").innerHTML =total;
     event.preventDefault();
-})
+    })
 
 });
