@@ -19,22 +19,35 @@
 <h3>pizza , all the way , bigger and better</h3>
 <body>
 
-<form>
+<form id="pizzaform">
+    
         <label>Pizza Size</label>
         <select>
         
-            <option value="small">Volvo</option>
-            <option value="Medium">Saab</option>
-            <option value="Large">Mercedes</option>
-            <option value="Kingsize">Audi</option>
+            <option value="small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Kingsize">Kingsize</option>
           </select><br>
         <label>Pizza Crust</label>
         <select>
-            <option value="Thin">Volvo</option>
-            <option value="Thick">Saab</option>
-            <option value="Cheesestuffed">Mercedes</option>
-            <option value="Gluten-free">Audi</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick">Thick</option>
+            <option value="Cheesestuffed">Cheesestuffed</option>
+            <option value="Gluten-free">Gluten-free</option>
           </select>
+         
+          <p>toppings</p>
+        <input id="topping1" type="checkbox" name="toppings" value="Chicken">Chicken
+        <input id="topping2" type="checkbox" name="toppings" value="Fruit">Fruit
+        <input id="topping3" type="checkbox" name="toppings" value="veggie">Veggie
+        <input id="topping4" type="checkbox" name="toppings" value="Sausag">sausage
+
+        <p>get your pizza delivered to you</p>
+        <input type="radio" name="gender" value="yes">Yes<br>
+        <input type="radio" name="gender" value="No">No<br>
+        <button type="button" name="getvalue" id="order">Place your Order</button>
+        <button id="submitbutton">Submit</button>
       
 </form>
     
