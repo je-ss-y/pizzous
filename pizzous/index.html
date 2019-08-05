@@ -7,10 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script
-    src="https://code.jquery.com/jquery-migrate-3.1.0.js"
-    integrity="sha256-oA/lsZCgEPkbv/byAkeXSTEZTsGOPZCrtbyFBHmcGKM="
-    crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
     <title>pizzous</title>
 </head>
@@ -22,34 +19,36 @@
 <form id="pizzaform">
     
         <label>Pizza Size</label>
-        <select>
+        <select id="pizzasize">
         
-            <option value="small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option>
-            <option value="Kingsize">Kingsize</option>
+            <option value="300">Small</option>
+            <option value="500">Medium</option>
+            <option value="700">Large</option>
+            <option value="1000">Kingsize</option>
           </select><br>
         <label>Pizza Crust</label>
-        <select>
-            <option value="Thin">Thin</option>
-            <option value="Thick">Thick</option>
-            <option value="Cheesestuffed">Cheesestuffed</option>
-            <option value="Gluten-free">Gluten-free</option>
+        <select id="pizzacrust">
+            <option value="300">Thin</option>
+            <option value="500">Thick</option>
+            <option value="700">Cheesestuffed</option>
+            <option value="1000">Gluten-free</option>
           </select>
          
-          <p>toppings</p>
-        <input id="topping1" type="checkbox" name="toppings" value="Chicken">Chicken
-        <input id="topping2" type="checkbox" name="toppings" value="Fruit">Fruit
-        <input id="topping3" type="checkbox" name="toppings" value="veggie">Veggie
-        <input id="topping4" type="checkbox" name="toppings" value="Sausag">sausage
+          <p id="pizzatoppings">toppings </p>
+        <input id="topping1" type="checkbox" name="toppings" value="800">Chicken
+        <input id="topping2" type="checkbox" name="toppings" value="400">Fruit
+        <input id="topping3" type="checkbox" name="toppings" value="300">Veggie
+        <input id="topping4" type="checkbox" name="toppings" value="500">sausage
 
         <p>get your pizza delivered to you</p>
-        <input type="radio" name="gender" value="yes">Yes<br>
-        <input type="radio" name="gender" value="No">No<br>
+        <input type="radio" name="Yes" value="yes">Yes<br>
+        <input type="radio" name="no" value="no">No<br>
         <button type="button" name="getvalue" id="order">Place your Order</button>
         <button id="submitbutton">Submit</button>
+        
       
 </form>
+<h3 id="totalamount"></h3>
     
     
 </body>
