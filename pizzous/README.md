@@ -1,5 +1,5 @@
 # Jessica Nkubito
-#### Class project, 29-7-2019
+#### Class project, 05-8-2019
 ## Description
 This is a class project intended to help us create a platform that interacts with the user using javascript;jquery and bootstrap.
 ## Setup/Installation Requirements

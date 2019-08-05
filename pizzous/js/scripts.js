@@ -45,11 +45,10 @@ function pizza(){
     var crustchoice=parsefloat(document.getElementById('pizzacrust').value);
     var toppingschoice=parsefloat(document.getElementById('pizzatoppings').value);
 
-    var total= (sizechoice + crustchoice + toppingschoice+deliveryPrice);
+    var total= (sizechoice + crustchoice + toppingschoice + deliveryPrice);
     document.getElementById("sizehistory").innerHTML = sizechoice;
     document.getElementById("crusthistory").innerHTML = crustchoice;
     document.getElementById("toppingshistory").innerHTML = toppingschoice;
-
     document.getElementById("totalamount").innerHTML =total;
     
 
